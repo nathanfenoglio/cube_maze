@@ -1,4 +1,6 @@
 const squares = document.querySelectorAll('.square');
+//const info_display = document.querySelectorAll('.infoDisplay');
+
 //you have /f/School/CSE 1325/Virtual Appliance Shared/General_Read_File_And_Do_Stuff/io_stuff.cpp that will print the maze_arrays for you from csv file
 //could perhaps add a 3d maze_arrays_holder to hold multiple mazes to be able to load once one is solved
 //could think of it like greg bright's hole maze or your maze for escape from uta
@@ -1050,7 +1052,17 @@ function draw_maze(){
     counter = 0;
     //just printing
     //should add html to represent on page...
+    //it's working, but continually adds text doesn't remove previous room info...
     console.log("door_num: " + door_num + " current_maze: " + current_maze);
+    var info = document.createElement('h1');
+    info.innerHTML = "door_num: " + door_num + " current_maze: " + current_maze;
+    info.classList.add('style_stuff');
+    let style = document.createElement('style');
+    style.innerHTML = '.style_stuff{font-size:20px;font-weight: lighter; font-family: sans-serif; color: cornflowerblue;}';
+    document.body.appendChild(style);
+    document.body.appendChild(info);
+    //info_display.classList.add("flim");
+    //info_display.innerHTML("flim");
     squares.forEach(square => {
     
         /*
@@ -1953,7 +1965,7 @@ function walk_maze(){
 
         //NEED TO DISPLAY ON SCREEN INSTEAD WITH CUBE REPRESENTATION MAP PERHAPS...
         console.log("current_maze: " + current_maze + " current_square: " + current_square);
-
+        
         draw_maze();
 
     }
@@ -1961,7 +1973,6 @@ function walk_maze(){
 };
 
 document.addEventListener("keydown", (flam) => {
-    console.log("key pressed");
     keyDownHandler(flam);
 });
 
