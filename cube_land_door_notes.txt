@@ -1,0 +1,111 @@
+case 0:
+	case 1 down : goes to maze 9
+	case 2 left : goes to maze 6
+	case 3 right : goes to maze 3
+
+case 1:
+	case 2 left : goes to maze 7
+	case 5 in (need Key_BB) : goes to maze 2 
+
+case 2:
+	case 1 down : goes to maze 11
+	case 4 out (need Key_BB) : goes to maze 1
+
+case 3:
+	case 1 down : goes to maze 12
+	case 2 left : goes to maze 0
+
+case 4: 
+	case 3 right : goes to maze 7
+	
+case 5:
+	case 1 down : goes to maze 14
+	case 3 right : goes to maze 8
+
+case 6:
+	case 1 down : goes to maze 15
+	case 3 right : goes to maze 0
+	
+case 7:
+	case 1 down : goes to maze 16
+	case 2 left : goes to maze 4
+	case 3 right : goes to maze 1
+
+case 8:
+	case 2 left : goes to maze 5
+
+case 9:
+	case 0 up : goes to maze 0
+	case 3 right : goes to maze 12
+	
+case 10:
+	case 1 down : goes to maze 19
+	case 3 right : goes to maze 13
+	case 5 in : goes to maze 11
+
+case 11:
+	case 0 up : goes to maze 2
+	case 4 out : goes to maze 10
+	
+case 12:
+	case 0 up : goes to maze 3
+	case 1 down : goes to maze 21
+	case 2 left : goes to maze 9
+	case 4 out : goes to maze 14
+
+case 13:
+	case 2 left : goes to maze 10
+	case 5 in (need Key_CC)	: goes to maze 14
+
+case 14:
+	case 0 up : goes to maze 5
+	case 3 right : goes to maze 17
+	case 4 out (need Key_CC) : goes to maze 13
+	case 5 in : goes to maze 12
+
+case 15:
+	case 0 up : goes to maze 6
+	case 5 in (need Key_AA) : goes to maze 16
+	
+case 16:
+	case 0 up : goes to maze 7
+	case 4 out (need Key_AA) : goes to maze 15
+	
+case 17:
+	case 1 down : goes to maze 26
+	case 2 left : goes to maze 14
+	
+case 18:
+	case 2 left : goes to maze 24
+	case 4 out (need Key_DD) : goes to maze 20
+
+case 19:
+	case 0 up : goes to maze 10
+	
+case 20:
+	case 3 right : goes to maze 23
+	case 5 in (need Key_DD) : goes to maze 18
+
+case 21:
+	case 0 up : goes to maze 12
+	case 5 in : goes to maze 22
+
+case 22:
+	case 4 out : goes to maze 21
+	
+case 23:
+	case 2 left : goes to maze 20
+	
+case 24:
+	case 3 right : goes to maze 18
+	case 5 in : goes to maze 25
+
+case 25:
+	case 4 out : goes to maze 24
+	case 5 in : goes to maze 26
+
+case 26:
+	case 0 up : goes to maze 17
+	case 4 out : goes to maze 25
+	case 5 in : goes to maze 2
+

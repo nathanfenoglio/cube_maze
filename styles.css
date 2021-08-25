@@ -1,0 +1,40 @@
+.grid {
+    /*
+    width: 606px;
+	height: 606px;
+	*/
+    width: 909px;
+	height: 909px;
+    
+    display: flex;
+	flex-wrap: wrap;
+	transform: translate(50%, 0%);
+}
+
+.square {
+	height: 23.98px;
+	width: 23.98px;
+	border: solid black 1px;
+}
+
+.backGroundColorEmpty {
+    background-color: chartreuse;
+}
+
+.backGroundColorWall {
+    background-color: black;
+}
+
+.backGroundColorStart {
+    background-color: fuchsia;
+}
+
+.backGroundColorFinish {
+    background-color: fuchsia;
+}
+
+.backGroundColorCurrent {
+    background-color: blue;
+}
+
+
