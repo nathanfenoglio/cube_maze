@@ -1045,24 +1045,26 @@ let start_square = -1;
 let current_maze = 0; //start at maze 0
 let door_num = 2; //start with the left door for maze 0, all else will be determined by the previous room's exit door #
 
-console.log(maze_arrays);
+var info = document.createElement('h1');
+
+//console.log(maze_arrays);
 //there really doesn't seem to be any reason to put the maze into a 2d array instead of a 1d array 
 //except for keeping track of things I suppose so do it
 function draw_maze(){
     counter = 0;
     //just printing
     //should add html to represent on page...
-    //it's working, but continually adds text doesn't remove previous room info...
     console.log("door_num: " + door_num + " current_maze: " + current_maze);
-    var info = document.createElement('h1');
+    //var info = document.createElement('h1');
     info.innerHTML = "door_num: " + door_num + " current_maze: " + current_maze;
     info.classList.add('style_stuff');
     let style = document.createElement('style');
     style.innerHTML = '.style_stuff{font-size:20px;font-weight: lighter; font-family: sans-serif; color: cornflowerblue;}';
+    //document.body.appendChild(style);
+    //document.body.appendChild(info);
     document.body.appendChild(style);
     document.body.appendChild(info);
-    //info_display.classList.add("flim");
-    //info_display.innerHTML("flim");
+    //document.body.insertAdjacentHTML("beforebegin", '<div class="infoDisplay" id=666>flam</div>');
     squares.forEach(square => {
     
         /*
@@ -1962,7 +1964,7 @@ function walk_maze(){
         
         //set current_maze and door_num based on the cube architecture
         determine_next_room_and_door(current_maze, current_square);
-
+        
         //NEED TO DISPLAY ON SCREEN INSTEAD WITH CUBE REPRESENTATION MAP PERHAPS...
         console.log("current_maze: " + current_maze + " current_square: " + current_square);
         

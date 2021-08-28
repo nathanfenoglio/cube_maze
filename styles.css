@@ -7,6 +7,8 @@
 	height: 909px;
     
     display: flex;
+    /*display: inline;*/
+    /*float: right;*/
 	flex-wrap: wrap;
 	transform: translate(50%, 0%);
 }
@@ -39,6 +41,7 @@
 
 .infoDisplay{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: oblique;
     font-size: 4.5vw;  
 }
 
