@@ -1036,6 +1036,35 @@ let maze_arrays = [
 
 ];
 
+let cube_images = [
+    "cube_images/0_0_0_Map.png", 
+    "cube_images/0_0_1_Map.png",
+    "cube_images/0_0_2_Map.png",
+    "cube_images/0_1_0_Map.png",
+    "cube_images/0_1_1_Map.png",
+    "cube_images/0_1_2_Map.png",
+    "cube_images/0_2_0_Map.png",
+    "cube_images/0_2_1_Map.png",
+    "cube_images/0_2_2_Map.png",
+    "cube_images/1_0_0_Map.png", 
+    "cube_images/1_0_1_Map.png",
+    "cube_images/1_0_2_Map.png",
+    "cube_images/1_1_0_Map.png",
+    "cube_images/1_1_1_Map.png",
+    "cube_images/1_1_2_Map.png",
+    "cube_images/1_2_0_Map.png",
+    "cube_images/1_2_1_Map.png",
+    "cube_images/1_2_2_Map.png",
+    "cube_images/2_0_0_Map.png", 
+    "cube_images/2_0_1_Map.png",
+    "cube_images/2_0_2_Map.png",
+    "cube_images/2_1_0_Map.png",
+    "cube_images/2_1_1_Map.png",
+    "cube_images/2_1_2_Map.png",
+    "cube_images/2_2_0_Map.png",
+    "cube_images/2_2_1_Map.png",
+    "cube_images/2_2_2_Map.png"
+];
 let counter = 0;
 let dim_square_maze = 35;
 let current_square = -1; 
@@ -1045,26 +1074,50 @@ let start_square = -1;
 let current_maze = 0; //start at maze 0
 let door_num = 2; //start with the left door for maze 0, all else will be determined by the previous room's exit door #
 
-var info = document.createElement('h1');
+//var info = document.createElement('h1');
+var info_2 = document.createElement('h1');
+
+var cube_image = document.createElement('img');
 
 //console.log(maze_arrays);
 //there really doesn't seem to be any reason to put the maze into a 2d array instead of a 1d array 
 //except for keeping track of things I suppose so do it
 function draw_maze(){
+    document.body.style.backgroundColor = 'blue';
     counter = 0;
     //just printing
     //should add html to represent on page...
     console.log("door_num: " + door_num + " current_maze: " + current_maze);
+    /*
     //var info = document.createElement('h1');
     info.innerHTML = "door_num: " + door_num + " current_maze: " + current_maze;
     info.classList.add('style_stuff');
     let style = document.createElement('style');
     style.innerHTML = '.style_stuff{font-size:20px;font-weight: lighter; font-family: sans-serif; color: cornflowerblue;}';
-    //document.body.appendChild(style);
-    //document.body.appendChild(info);
     document.body.appendChild(style);
     document.body.appendChild(info);
+    */
+    //info_2.innerHTML = "CURRENT ROOM IN CUBE: " + current_maze;
+    info_2.innerHTML = "CURRENT ROOM IN CUBE: " + Number(current_maze).toString(3).padStart(3, '0');
+    //info_2.classList.add('style_stuff_2');
+    //let style_2 = document.createElement('style_2');
+    //style_2.innerHTML = '.style_stuff_2{font-size:40px;color:pink;}';
+    //style_2.innerHTML = '.style_stuff_2{font-size:20px;font-weight: lighter; font-family: sans-serif; color: cornflowerblue;}';
+    info_2.style.color = '#ff0080';
+    info_2.style.marginTop = '30px';
+    info_2.style.fontSize = '30px';
+    //info_2.style.fontSize = '40px';
+    //document.body.appendChild(style_2);
+    document.body.appendChild(info_2);
     //document.body.insertAdjacentHTML("beforebegin", '<div class="infoDisplay" id=666>flam</div>');
+    //cube_image.src = "cube_images/0_0_0_Map.png";
+    cube_image.src = cube_images[current_maze];
+    cube_image.style.background = '#ffaa69';
+    cube_image.style.padding = '20px';
+    cube_image.style.marginLeft = '30px';
+    document.body.appendChild(cube_image);
+
+
     squares.forEach(square => {
     
         /*
