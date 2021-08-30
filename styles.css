@@ -3,21 +3,30 @@
     width: 606px;
 	height: 606px;
 	*/
+    /*
     width: 909px;
 	height: 909px;
-    
+    */
+    width: 48vw;
+	height: 48vw;
+
     display: flex;
     /*display: inline;*/
     /*float: right;*/
-    position:absolute;
+    position: absolute;
 	flex-wrap: wrap;
 	transform: translate(50%, 0%);
 }
 
 .square {
+    /*
 	height: 23.98px;
 	width: 23.98px;
-	border: solid black 1px;
+    */
+    height: 1.2675vw;
+	width: 1.2675vw;
+
+    border: solid black 1px;
 }
 
 .backGroundColorEmpty {
