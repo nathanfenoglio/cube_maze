@@ -7,9 +7,12 @@
     width: 909px;
 	height: 909px;
     */
+    /* worked on lenovo, but funky on mac book
     width: 48vw;
 	height: 48vw;
-
+    */
+    width: 45vw;
+    height: 45vw;
     display: flex;
     /*display: inline;*/
     /*float: right;*/
@@ -23,9 +26,12 @@
 	height: 23.98px;
 	width: 23.98px;
     */
+    /*worked on lenovo, but funky on mac book
     height: 1.2675vw;
 	width: 1.2675vw;
-
+    */
+    height: 1.181vw;
+    width: 1.181vw;
     border: solid black 1px;
 }
 
