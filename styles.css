@@ -3,18 +3,19 @@
     width: 606px;
 	height: 606px;
 	*/
-    /*
+    
     width: 909px;
 	height: 909px;
-    */
+    
     /*
     width: 900px;
 	height: 900px;
     */
     /* worked on lenovo, but funky on mac book */
+    /*
     width: 48vw;
 	height: 48vw;
-    
+    */
     /*
     width: 45vw;
     height: 45vw;
@@ -28,10 +29,10 @@
 }
 
 .square {
-    /*
+    
 	height: 23.98px;
 	width: 23.98px;
-    */
+    
     /*
     height: 22;
 	width: 22;
@@ -41,17 +42,17 @@
     height: 1.2675vw;
 	width: 1.2675vw;
     */
-    
+    /*
     height: 1.23vw;
 	width: 1.23vw;
-    
+    */
     /*
     height: 1.181vw;
     width: 1.181vw;
     */
-    /*border: solid black 1px;*/
+    border: solid black 1px;
     /*border: solid black 0.071vw;*/
-    border: solid black 0.001vw;
+    /*border: solid black 0.001vw;*/
 }
 
 .backGroundColorEmpty {
