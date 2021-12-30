@@ -1079,6 +1079,10 @@ var info_2 = document.createElement('h1');
 
 var cube_image = document.createElement('img');
 
+//messing 
+let vh = window.innerHeight;
+console.log(vh);
+
 //console.log(maze_arrays);
 //there really doesn't seem to be any reason to put the maze into a 2d array instead of a 1d array 
 //except for keeping track of things I suppose so do it
