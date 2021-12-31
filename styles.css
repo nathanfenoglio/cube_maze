@@ -4,9 +4,12 @@
 	height: 606px;
 	*/
     /*909px is too tall for a lot of screens*/
-    
+    /*
     width: 808px;
 	height: 808px;
+    */
+    width: 707px;
+	height: 707px;
 
     /*
     width: 900px;
@@ -35,10 +38,13 @@
 	height: 23.98px;
 	width: 23.98px;
     */
-    
+    /*
     height: 21.08px;
 	width: 21.08px;
-    
+    */
+    height: 18.2px;
+	width: 18.2px;
+
     /*worked on lenovo, but funky on mac book */
     /*
     height: 1.2675vw;
