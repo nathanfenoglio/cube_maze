@@ -186,7 +186,7 @@ let maze_arrays = [
         [11,10,11,10,11,10,11,10,11,10,11,11,11,10,11,10,11,10,11,10,11,10,11,10,11,10,11,10,11,10,11,11,11,10,11],
         [11,10,11,10,10,10,10,10,11,10,10,10,11,10,11,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,11,10,10,10,11],
         [11,11,11,11,11,10,11,10,11,10,11,10,11,11,11,11,11,11,11,10,11,10,11,10,11,10,11,10,11,10,11,10,11,10,11],
-        [11,10,11,10,10,10,11,10,11,10,11,10,11,10,11,10,11,10,10,10,10,10,11,10,10,10,11,10,10,10,10,10,10,10,11],
+        [11,66,11,10,10,10,11,10,11,10,11,10,11,10,11,10,11,10,10,10,10,10,11,10,10,10,11,10,10,10,10,10,10,10,11],
         [11,10,11,10,11,11,11,10,11,10,11,10,11,10,11,10,11,10,11,11,11,10,11,11,11,10,11,11,11,11,11,10,11,11,11],
         [11,10,11,10,11,10,11,10,10,10,10,10,10,10,10,10,11,10,10,10,11,10,10,10,10,10,10,10,10,10,10,10,10,10,11],
         [11,10,11,11,11,10,11,11,11,10,11,11,11,10,11,11,11,10,11,10,11,11,11,10,11,10,11,10,11,11,11,10,11,10,11],
@@ -334,7 +334,7 @@ let maze_arrays = [
         [11,10,11,10,11,11,11,11,11,11,11,10,11,10,11,11,11,11,11,10,11,11,11,11,11,10,11,10,11,11,11,10,11,11,11],
         [11,10,10,10,10,10,10,10,10,10,10,10,11,10,10,10,10,10,11,10,10,10,11,10,11,10,10,10,10,10,10,10,11,10,11],
         [11,10,11,10,11,10,11,10,11,10,11,11,11,10,11,10,11,10,11,11,11,10,11,10,11,10,11,11,11,11,11,10,11,10,11],
-        [11,10,10,10,10,10,10,10,10,10,10,10,10,10,11,10,10,10,10,10,11,10,11,10,10,10,11,10,10,10,11,10,11,10,11],
+        [11,10,10,10,10,10,10,10,10,10,10,10,10,10,11,10,10,10,10,10,11,10,11,10,10,10,11,10,10,66,11,10,11,10,11],
         [11,10,11,10,11,10,11,10,11,10,11,10,11,10,11,10,11,11,11,11,11,10,11,11,11,11,11,10,11,10,11,11,11,10,11],
         [11,10,10,10,10,10,11,10,10,10,10,10,10,10,10,10,11,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,11],
         [11,10,11,11,11,10,11,10,11,10,11,10,11,10,11,10,11,10,11,10,11,10,11,10,11,11,11,11,11,10,11,11,11,11,11],
@@ -760,7 +760,7 @@ let maze_arrays = [
         [11,10,11,10,11,10,11,10,11,11,11,10,11,10,11,10,11,10,11,10,11,10,11,10,11,10,11,11,11,11,11,11,11,10,11],
         [11,10,10,10,10,10,10,10,10,10,11,10,11,10,11,10,10,10,10,10,10,10,10,10,11,10,10,10,11,10,10,10,10,10,11],
         [11,10,11,10,11,11,11,10,11,10,11,11,11,10,11,11,11,10,11,10,11,10,11,10,11,10,11,10,11,10,11,10,11,10,11],
-        [11,10,10,10,11,10,10,10,10,10,10,10,11,10,11,10,11,10,10,10,10,10,10,10,10,10,10,10,10,10,11,10,10,10,11],
+        [11,10,10,10,11,10,10,10,10,10,10,10,11,10,11,10,11,10,10,10,10,10,10,66,10,10,10,10,10,10,11,10,10,10,11],
         [11,10,11,11,11,10,11,10,11,10,11,10,11,11,11,10,11,10,11,10,11,10,11,10,11,10,11,10,11,10,11,11,11,10,11],
         [11,10,11,10,10,10,10,10,10,10,10,10,10,10,11,10,11,10,10,10,11,10,10,10,11,10,11,10,10,10,10,10,10,10,11],
         [11,11,11,10,11,10,11,11,11,10,11,11,11,10,11,10,11,10,11,11,11,10,11,11,11,10,11,10,11,11,11,10,11,10,11],
@@ -814,7 +814,7 @@ let maze_arrays = [
         [11,10,11,10,11,10,11,11,11,10,11,11,11,10,11,10,11,11,11,10,11,10,11,11,11,10,11,10,11,10,11,10,11,10,11],
         [11,10,10,10,10,10,10,10,11,10,10,10,10,10,10,10,11,10,10,10,10,10,11,10,10,10,11,10,10,10,10,10,10,10,11],
         [11,10,11,10,11,11,11,11,11,11,11,10,11,10,11,11,11,10,11,10,11,11,11,11,11,10,11,10,11,10,11,10,11,10,11],
-        [11,10,11,10,10,10,10,10,11,10,10,10,11,10,11,10,10,10,10,10,11,10,10,10,11,10,10,10,11,10,10,10,10,10,11],
+        [11,10,11,10,10,10,10,10,11,10,10,10,11,10,11,66,10,10,10,10,11,10,10,10,11,10,10,10,11,10,10,10,10,10,11],
         [11,10,11,11,11,10,11,11,11,10,11,10,11,10,11,11,11,11,11,10,11,11,11,10,11,11,11,10,11,10,11,10,11,10,11],
         [11,10,10,10,10,10,11,10,10,10,10,10,10,10,10,10,10,10,10,10,11,10,11,10,10,11,10,10,10,10,11,10,10,10,11],
         [11,10,11,11,11,10,11,10,11,11,11,10,11,11,11,10,11,10,11,11,11,10,11,10,11,11,11,10,11,10,11,11,11,11,11],
@@ -1074,6 +1074,34 @@ let start_square = -1;
 let current_maze = 0; //start at maze 0
 let door_num = 2; //start with the left door for maze 0, all else will be determined by the previous room's exit door #
 
+/*
+key AA is in 2,1,0 (21)
+	needed for passage between 1,2,0 (15) and 1,2,1 (16)
+    through the in door of 1,2,0 (15) and through the out door of 1,2,1 (16)
+key BB is in 0,2,2 (8)
+	needed for passage between 0,0,1 (1) and 0,0,2 (2)
+    through the in door of 0,0,1 (1) and through the out door of 0,0,2 (2)
+key CC is in 0,1,1 (4)
+	needed for passage between 1,1,1 (13) and 1,1,2 (14)
+    through the in door of 1,1,1 (13) and through the out door of 1,1,2 (14)
+key DD is in 2,0,1 (19)
+	needed for passage between 2,0,0 (18) and 2,0,2 (20)
+    through the out door of 2,0,0 (18) and through the in door of 2,0,2 (20)
+*/
+
+/*
+Start room: 0, 0, 0 
+End room: 2, 1, 2 
+*/
+
+//SOLUTION PATH:
+//D, R, D, U, O, U, R, L, D, I, L, U, L, D, I, U, L, R, R, I, D, O, D, U, R, I, R, D, O, O, R, O, R 
+
+//doors locked 0 or open 1
+//doors 1, 2, 13, 14, 15, 16, 18, 20 are initially locked
+//should color in some way to signify locked
+let doors_locked_or_open = [1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
+
 //var info = document.createElement('h1');
 var info_2 = document.createElement('h1');
 
@@ -1125,10 +1153,11 @@ function draw_maze(){
 
     squares.forEach(square => {
     
-        /*
+    /*
     code for cube land
     10 = empty pathway
     11 = wall
+    66 = key
     0 = UP (U)
     1 = DOWN (D)
     2 = LEFT (L)
@@ -1204,6 +1233,9 @@ function draw_maze(){
         }
         
         goal_squares.push(counter);
+    }
+    else if(cell_value == 66){ //a key
+        square.classList.add('backGroundColorKey');
     }
 
     counter++; 
@@ -2006,27 +2038,157 @@ function determine_next_room_and_door(current_room, exit_door){
 }
 
 function walk_maze(){
+    //check for key 
+    //also checking if key has already been found otherwise not bothering talking
+    if(maze_arrays[current_maze][Math.floor(current_square / dim_square_maze)][current_square % dim_square_maze] == 66){
+        //key AA
+        if(current_maze == 21 && doors_locked_or_open[15] == 0){
+            doors_locked_or_open[15] = 1;    
+            doors_locked_or_open[16] = 1;    
+            console.log("key AA found");
+            alert("key needed for passage between 1,2,0 (15) and 1,2,1 (16) found!");
+        }
+        //key BB
+        else if(current_maze == 8 && doors_locked_or_open[1] == 0){
+            doors_locked_or_open[1] = 1;    
+            doors_locked_or_open[2] = 1;
+            console.log("key BB found");    
+            alert("key needed for passage between 0,0,1 (1) and 0,0,2 (2) found!");
+        }
+        //key CC
+        else if(current_maze == 4 && doors_locked_or_open[13] == 0){
+            doors_locked_or_open[13] = 1;    
+            doors_locked_or_open[14] = 1;
+            console.log("key CC found");    
+            alert("key needed for passage between 1,1,1 (13) and 1,1,2 (14) found!");
+        }
+        //key DD
+        else if(current_maze == 19 && doors_locked_or_open[18] == 0){
+            doors_locked_or_open[18] = 1;    
+            doors_locked_or_open[20] = 1;
+            console.log("key DD found");    
+            alert("key needed for passage between 2,0,0 (18) and 2,0,2 (20) found!");
+        }
+    }
     if(goal_squares.includes(current_square)){
-        console.log("you solved it!");
-        alert("you solved it!");
-        //start over
-        counter = 0;
-
-        //clear all background colors to redraw        
-        squares.forEach(square => {
-            square.classList.remove('backGroundColorCurrent');
-            square.classList.remove('backGroundColorEmpty');
-            square.classList.remove('backGroundColorWall');
-            square.classList.remove('backGroundColorFinish');
-        });
-        
         //set current_maze and door_num based on the cube architecture
-        determine_next_room_and_door(current_maze, current_square);
-        
-        //NEED TO DISPLAY ON SCREEN INSTEAD WITH CUBE REPRESENTATION MAP PERHAPS...
-        console.log("current_maze: " + current_maze + " current_square: " + current_square);
-        
-        draw_maze();
+        //NEED TO ADD THE KEYS AND DOOR LOGIC...
+        //could perhaps add checks here if current_maze is a locked door transition room
+        //and current_square represents the particular door that would be locked
+        //then display a message about the door being locked and the room that the player can find the key in
+        //check for locked door and if door is locked
+        //key AA needed
+        if(current_maze == 15 && maze_arrays[current_maze][Math.floor(current_square / dim_square_maze)][current_square % dim_square_maze] == 5 && doors_locked_or_open[current_maze] == 0){
+            //then display a message about the door being locked and the room that the player can find the key in
+            console.log(current_square);
+            alert("sorry door is locked, need key found in room 2,1,0 (21)");
+            //set door square's color back
+            squares[current_square].classList.remove('backGroundColorCurrent');
+            squares[current_square].classList.add('backGroundColorFinish');
+            //and move the player off of the door square
+            current_square = current_square - dim_square_maze;
+            squares[current_square].classList.add('backGroundColorCurrent');
+        }
+        else if(current_maze == 16 && maze_arrays[current_maze][Math.floor(current_square / dim_square_maze)][current_square % dim_square_maze] == 4 && doors_locked_or_open[current_maze] == 0){
+            //then display a message about the door being locked and the room that the player can find the key in
+            alert("sorry door is locked, need key found in room 2,1,0 (21)");
+            //set door square's color back
+            squares[current_square].classList.remove('backGroundColorCurrent');
+            squares[current_square].classList.add('backGroundColorFinish');
+            //and move the player off of the door square
+            current_square = current_square + dim_square_maze;
+            squares[current_square].classList.add('backGroundColorCurrent');
+        }
+        //key BB needed
+        else if(current_maze == 1 && maze_arrays[current_maze][Math.floor(current_square / dim_square_maze)][current_square % dim_square_maze] == 5 && doors_locked_or_open[current_maze] == 0){
+            //then display a message about the door being locked and the room that the player can find the key in
+            alert("sorry door is locked, need key found in room 0,2,2 (8)");
+            //set door square's color back
+            squares[current_square].classList.remove('backGroundColorCurrent');
+            squares[current_square].classList.add('backGroundColorFinish');
+            //and move the player off of the door square
+            current_square = current_square + dim_square_maze;
+            squares[current_square].classList.add('backGroundColorCurrent');
+        }
+        else if(current_maze == 2 && maze_arrays[current_maze][Math.floor(current_square / dim_square_maze)][current_square % dim_square_maze] == 4 && doors_locked_or_open[current_maze] == 0){
+            //then display a message about the door being locked and the room that the player can find the key in
+            alert("sorry door is locked, need key found in room 0,2,2 (8)");
+            //set door square's color back
+            squares[current_square].classList.remove('backGroundColorCurrent');
+            squares[current_square].classList.add('backGroundColorFinish');
+            //and move the player off of the door square
+            current_square = current_square + dim_square_maze;
+            squares[current_square].classList.add('backGroundColorCurrent');
+        }
+        //key CC needed
+        else if(current_maze == 13 && maze_arrays[current_maze][Math.floor(current_square / dim_square_maze)][current_square % dim_square_maze] == 5 && doors_locked_or_open[current_maze] == 0){
+            //then display a message about the door being locked and the room that the player can find the key in
+            alert("sorry door is locked, need key found in room 0,1,1 (4)");
+            //set door square's color back
+            squares[current_square].classList.remove('backGroundColorCurrent');
+            squares[current_square].classList.add('backGroundColorFinish');
+            //and move the player off of the door square
+            current_square = current_square + dim_square_maze;
+            squares[current_square].classList.add('backGroundColorCurrent');        
+        }
+        else if(current_maze == 14 && maze_arrays[current_maze][Math.floor(current_square / dim_square_maze)][current_square % dim_square_maze] == 4 && doors_locked_or_open[current_maze] == 0){
+            //then display a message about the door being locked and the room that the player can find the key in
+            alert("sorry door is locked, need key found in room 0,1,1 (4)");
+            //set door square's color back
+            squares[current_square].classList.remove('backGroundColorCurrent');
+            squares[current_square].classList.add('backGroundColorFinish');
+            //and move the player off of the door square
+            current_square = current_square + dim_square_maze;
+            squares[current_square].classList.add('backGroundColorCurrent');        
+        }
+        //key DD needed
+        else if(current_maze == 18 && maze_arrays[current_maze][Math.floor(current_square / dim_square_maze)][current_square % dim_square_maze] == 4 && doors_locked_or_open[current_maze] == 0){
+            //then display a message about the door being locked and the room that the player can find the key in
+            alert("sorry door is locked, need key found in room 2,0,1 (19)");
+            //set door square's color back
+            squares[current_square].classList.remove('backGroundColorCurrent');
+            squares[current_square].classList.add('backGroundColorFinish');
+            //and move the player off of the door square
+            current_square = current_square - dim_square_maze;
+            squares[current_square].classList.add('backGroundColorCurrent');        
+        }
+        else if(current_maze == 20 && maze_arrays[current_maze][Math.floor(current_square / dim_square_maze)][current_square % dim_square_maze] == 5 && doors_locked_or_open[current_maze] == 0){
+            //then display a message about the door being locked and the room that the player can find the key in
+            alert("sorry door is locked, need key found in room 2,0,1 (19)");
+            //set door square's color back
+            squares[current_square].classList.remove('backGroundColorCurrent');
+            squares[current_square].classList.add('backGroundColorFinish');
+            //and move the player off of the door square
+            current_square = current_square + dim_square_maze;
+            squares[current_square].classList.add('backGroundColorCurrent');        
+        }
+        //no key needed
+        else{ 
+            //need to have different messages as you go room to room, not just you solved it until the end
+            console.log("you solved it!");
+            alert("you solved it!");
+            //start over
+            counter = 0;
+
+            //clear all background colors to redraw        
+            squares.forEach(square => {
+                square.classList.remove('backGroundColorCurrent');
+                square.classList.remove('backGroundColorEmpty');
+                square.classList.remove('backGroundColorWall');
+                square.classList.remove('backGroundColorFinish');
+                square.classList.remove('backGroundColorKey');
+            });
+
+            //current_square
+            determine_next_room_and_door(current_maze, current_square);
+
+            //NEED TO DISPLAY ON SCREEN INSTEAD WITH CUBE REPRESENTATION MAP PERHAPS...
+            console.log("current_maze: " + current_maze + " current_square: " + current_square);
+
+            draw_maze();
+        }
+
+        //draw_maze();
 
     }
 
