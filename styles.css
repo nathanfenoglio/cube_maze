@@ -30,7 +30,8 @@
     position: absolute;
 	flex-wrap: wrap;
 	/*transform: translate(50%, 0%);*/
-	transform: translate(60%, 0%);
+	/*transform: translate(60%, 0%);*/
+	transform: translate(70%, 0%);
 }
 
 .square {
