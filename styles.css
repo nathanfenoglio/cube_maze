@@ -81,4 +81,60 @@
     font-size: 4.5vw;  
 }
 
+/*it looks fine on your lenovo, but can't see entire maze on like a macbook*/
+@media screen and (max-width: 1280px){
+    .grid {
+        
+        width: 606px;
+        height: 606px;
+        
+        /*
+        width: 909px;
+        height: 909px;
+        */
+        display: flex;
+        position: absolute;
+        flex-wrap: wrap;
+        transform: translate(50%, 0%);
+    }
+    
+    .square {
+        /*
+        height: 23.98px;
+        width: 23.98px;
+        */
+        height: 15.98px;
+        width: 15.98px;
+
+        border: solid black 1px;
+    }
+    
+    .backGroundColorEmpty {
+        background-color: chartreuse;
+    }
+    
+    .backGroundColorWall {
+        background-color: black;
+    }
+    
+    .backGroundColorStart {
+        background-color: fuchsia;
+    }
+    
+    .backGroundColorFinish {
+        background-color: fuchsia;
+    }
+    
+    .backGroundColorCurrent {
+        background-color: blue;
+    }
+    
+    .infoDisplay{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-style: oblique;
+        font-size: 4.5vw;  
+    }
+        
+    
+}
 
