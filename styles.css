@@ -3,10 +3,11 @@
     width: 606px;
 	height: 606px;
 	*/
+    /*909px is too tall for a lot of screens*/
     
-    width: 909px;
-	height: 909px;
-    
+    width: 808px;
+	height: 808px;
+
     /*
     width: 900px;
 	height: 900px;
@@ -25,18 +26,19 @@
     /*float: right;*/
     position: absolute;
 	flex-wrap: wrap;
-	transform: translate(50%, 0%);
+	/*transform: translate(50%, 0%);*/
+	transform: translate(60%, 0%);
 }
 
 .square {
-    
+    /*
 	height: 23.98px;
 	width: 23.98px;
-    
-    /*
-    height: 22;
-	width: 22;
     */
+    
+    height: 21.08px;
+	width: 21.08px;
+    
     /*worked on lenovo, but funky on mac book */
     /*
     height: 1.2675vw;
