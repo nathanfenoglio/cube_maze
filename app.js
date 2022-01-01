@@ -1108,8 +1108,8 @@ var info_2 = document.createElement('h1');
 var info_3 = document.createElement('h1');
 info_3.innerHTML = "GOAL ROOM: 212";
 info_3.style.color = '#5feb34';
-info_3.style.marginTop = '30px';
-info_3.style.fontSize = '30px';
+info_3.style.marginTop = '10px';
+info_3.style.fontSize = '25px';
 
 //display whether or not have obtained keys
 var info_key_AA = document.createElement('h4');
@@ -1166,7 +1166,7 @@ function draw_maze(){
     //style_2.innerHTML = '.style_stuff_2{font-size:40px;color:pink;}';
     //style_2.innerHTML = '.style_stuff_2{font-size:20px;font-weight: lighter; font-family: sans-serif; color: cornflowerblue;}';
     info_2.style.color = '#ff0080';
-    info_2.style.marginTop = '30px';
+    info_2.style.marginTop = '20px';
     info_2.style.fontSize = '25px';
     //info_2.style.fontSize = '40px';
     //document.body.appendChild(style_2);
@@ -1208,7 +1208,6 @@ function draw_maze(){
     }
 
     info_key_AA.style.color = '#ebc034';
-    info_key_AA.style.marginTop = '30px';
     info_key_AA.style.fontSize = '20px';
     document.body.appendChild(info_key_AA);
 
