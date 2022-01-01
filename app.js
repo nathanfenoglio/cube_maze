@@ -1112,10 +1112,10 @@ info_3.style.marginTop = '30px';
 info_3.style.fontSize = '30px';
 
 //display whether or not have obtained keys
-var info_key_AA = document.createElement('h2');
-var info_key_BB = document.createElement('h2');
-var info_key_CC = document.createElement('h2');
-var info_key_DD = document.createElement('h2');
+var info_key_AA = document.createElement('h4');
+var info_key_BB = document.createElement('h4');
+var info_key_CC = document.createElement('h4');
+var info_key_DD = document.createElement('h4');
 
 
 var cube_image = document.createElement('img');
@@ -1167,7 +1167,7 @@ function draw_maze(){
     //style_2.innerHTML = '.style_stuff_2{font-size:20px;font-weight: lighter; font-family: sans-serif; color: cornflowerblue;}';
     info_2.style.color = '#ff0080';
     info_2.style.marginTop = '30px';
-    info_2.style.fontSize = '30px';
+    info_2.style.fontSize = '25px';
     //info_2.style.fontSize = '40px';
     //document.body.appendChild(style_2);
     document.body.appendChild(info_2);
@@ -1209,19 +1209,19 @@ function draw_maze(){
 
     info_key_AA.style.color = '#ebc034';
     info_key_AA.style.marginTop = '30px';
-    info_key_AA.style.fontSize = '30px';
+    info_key_AA.style.fontSize = '20px';
     document.body.appendChild(info_key_AA);
 
     info_key_BB.style.color = '#ebc034';
-    info_key_BB.style.fontSize = '30px';
+    info_key_BB.style.fontSize = '20px';
     document.body.appendChild(info_key_BB);
 
     info_key_CC.style.color = '#ebc034';
-    info_key_CC.style.fontSize = '30px';
+    info_key_CC.style.fontSize = '20px';
     document.body.appendChild(info_key_CC);
 
     info_key_DD.style.color = '#ebc034';
-    info_key_DD.style.fontSize = '30px';
+    info_key_DD.style.fontSize = '20px';
     document.body.appendChild(info_key_DD);
 
 
