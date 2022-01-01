@@ -1,4 +1,6 @@
 //play maze at https://nathanfenoglio.github.io/cube_maze/
+//maze map at http://nathan-fenoglio.com/Web_Apps
+
 
 
 const squares = document.querySelectorAll('.square');
@@ -916,48 +918,7 @@ let maze_arrays = [
         [11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11],
         [11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11],
         [11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11]
-    ],
-    
-    /*
-    //23
-    [
-        [11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11],
-        [11,10,10,10,10,10,11,10,10,10,10,10,10,10,11,10,10,10,10,10,10,10,10,10,11,10,10,10,10,10,10,10,11,10,11],
-        [11,10,11,10,11,10,11,11,11,10,11,10,11,11,11,10,11,11,11,10,11,11,11,10,11,10,11,10,11,10,11,10,11,10,11],
-        [11,10,10,10,11,10,10,10,11,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,11,10,10,10,11,10,10,10,11],
-        [11,10,11,10,11,10,11,10,11,11,11,10,11,10,11,10,11,10,11,10,11,10,11,10,11,11,11,10,11,10,11,10,11,10,11],
-        [11,10,10,10,10,10,10,10,11,10,10,10,10,10,11,10,10,10,11,10,10,10,10,10,11,10,10,10,11,10,10,10,10,10,11],
-        [11,10,11,10,11,10,11,11,11,10,11,10,11,10,11,10,11,10,11,11,11,10,11,10,11,10,11,10,11,10,11,10,11,10,11],
-        [11,10,10,10,10,10,11,10,10,10,10,10,10,10,10,10,11,10,10,10,11,10,10,10,10,10,10,10,10,10,10,10,10,10,11],
-        [11,10,11,11,11,11,11,10,11,10,11,10,11,10,11,10,11,11,11,10,11,11,11,10,11,10,11,11,11,10,11,10,11,11,11],
-        [11,10,11,10,10,10,11,10,10,10,10,10,10,10,11,10,10,10,11,10,10,10,11,10,10,10,10,10,10,10,10,10,10,10,11],
-        [11,10,11,10,11,10,11,11,11,10,11,10,11,10,11,11,11,11,11,10,11,11,11,11,11,11,11,10,11,10,11,11,11,10,11],
-        [11,10,10,10,10,10,11,10,10,10,10,10,10,10,10,10,10,11,10,10,10,10,10,10,11,10,10,10,10,10,10,10,10,10,11],
-        [11,10,11,10,11,11,11,10,11,10,11,10,11,11,11,10,11,10,11,10,11,11,11,10,11,11,11,10,11,10,11,10,11,10,11],
-        [11,10,10,10,10,10,11,10,10,10,10,10,10,10,11,10,10,10,11,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,11],
-        [11,10,11,10,11,11,11,11,11,11,11,10,11,10,11,10,11,10,11,11,11,10,11,10,11,10,11,10,11,10,11,10,11,10,11],
-        [11,10,10,10,11,10,11,10,10,10,11,10,11,10,10,10,10,10,10,10,11,10,11,10,10,10,11,10,10,10,10,10,10,10,11],
-        [11,10,11,10,11,10,11,10,11,10,11,11,11,10,11,10,11,10,11,10,11,11,11,10,11,10,11,10,11,10,11,10,11,10,11],
-        [2,10,10,10,10,10,10,10,11,10,10,10,11,10,11,10,11,10,11,10,10,10,11,10,10,10,11,10,11,10,11,10,10,11,11],
-        [11,10,11,10,11,10,11,10,11,10,11,10,11,11,11,10,11,10,11,10,11,10,11,11,11,10,11,10,11,10,11,10,11,10,11],
-        [11,10,10,10,11,10,11,10,10,10,11,10,10,10,11,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,11,10,11],
-        [11,10,11,11,11,10,11,10,11,10,11,10,11,10,11,10,11,10,11,10,11,10,11,10,11,10,11,10,11,10,11,10,11,10,11],
-        [11,10,10,10,11,10,11,10,10,10,11,10,10,10,11,10,10,10,10,10,10,10,11,10,11,10,10,10,10,10,11,10,10,10,11],
-        [11,10,11,10,11,10,11,10,11,10,11,10,11,10,11,11,11,10,11,10,11,10,11,11,11,11,11,10,11,10,11,10,11,10,11],
-        [11,10,10,10,10,10,11,10,10,10,10,10,11,10,10,10,11,10,10,10,10,10,10,10,11,10,10,10,11,10,10,10,11,10,11],
-        [11,10,11,10,11,10,11,11,11,10,11,10,11,10,11,10,11,10,11,10,11,10,11,11,11,10,11,10,11,10,11,10,11,10,11],
-        [11,10,10,10,10,10,11,10,10,10,10,10,10,10,11,10,11,10,10,10,10,10,10,10,11,10,10,10,10,10,10,10,11,10,11],
-        [11,10,11,10,11,11,11,10,11,10,11,10,11,10,11,10,11,10,11,11,11,10,11,10,11,11,11,11,11,10,11,10,11,11,11],
-        [11,10,10,10,11,10,11,10,10,10,10,10,11,10,10,10,10,10,11,10,10,10,10,10,11,10,11,10,10,10,11,10,10,10,11],
-        [11,11,11,10,11,10,11,10,11,11,11,11,11,10,11,10,11,10,11,11,11,10,11,11,11,10,11,10,11,10,11,10,11,11,11],
-        [11,10,10,10,10,10,10,10,10,10,10,10,11,10,11,10,10,10,11,10,10,10,10,10,11,10,10,10,11,10,10,10,10,10,11],
-        [11,10,11,10,11,10,11,11,11,10,11,10,11,10,11,10,11,11,11,10,11,10,11,10,11,11,11,10,11,10,11,10,11,10,11],
-        [11,10,11,10,10,10,11,10,10,10,10,10,10,10,10,10,10,10,10,10,11,10,10,10,11,10,10,10,11,10,11,10,10,10,11],
-        [11,10,11,10,11,10,11,10,11,10,11,10,11,10,11,10,11,10,11,10,11,10,11,11,11,10,11,10,11,10,11,10,11,10,11],
-        [11,10,10,10,10,10,11,10,10,10,10,10,11,10,11,10,10,10,10,10,10,10,10,10,11,10,10,10,10,10,10,10,11,10,11],
-        [11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11]
-    ],
-    */
+    ],    
     //24
     [
         [11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11],
@@ -1134,14 +1095,13 @@ End room: 2, 1, 2
 */
 
 //SOLUTION PATH:
-//D, R, D, U, O, U, R, L, D, I, L, U, L, D, I, U, L, R, R, I, D, O, D***, U, R, I, R, D, O, O, R, O, R 
+//D, R, D, U, O, U, R, L, D, I, L, U, L, D, I, U, L, R, R, I, D, O, D, U, R, I, R, D, O, O, R, O, R 
 
 //doors locked 0 or open 1
 //doors 1, 2, 13, 14, 15, 16, 18, 20 are initially locked
 //should color in some way to signify locked
 let doors_locked_or_open = [1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
 
-//var info = document.createElement('h1');
 var info_2 = document.createElement('h1');
 
 var info_3 = document.createElement('h1');
@@ -1159,10 +1119,6 @@ var info_key_DD = document.createElement('h4');
 
 var cube_image = document.createElement('img');
 
-//messing 
-let vh = window.innerHeight;
-console.log(vh);
-
 //to not display any transition door room message on the first draw
 var first_time = true;
 
@@ -1172,13 +1128,12 @@ var previous_door_num = -1;
 
 var string_rep_of_door_nums = ["UP", "DOWN", "LEFT", "RIGHT", "OUT", "IN"];
 
-//there really doesn't seem to be any reason to put the maze into a 2d array instead of a 1d array 
-//except for keeping track of things I suppose so do it
 function draw_maze(){
     document.body.style.backgroundColor = 'blue';
     counter = 0;
     //just printing
     console.log("door_num: " + door_num + " current_maze: " + current_maze);
+   
     if(first_time){
         first_time = false;
     }
@@ -1249,91 +1204,91 @@ function draw_maze(){
 
     squares.forEach(square => {
     
-    /*
-    code for cube land
-    10 = empty pathway
-    11 = wall
-    66 = key
-    0 = UP (U)
-    1 = DOWN (D)
-    2 = LEFT (L)
-    3 = RIGHT (R)
-    4 = OUT (T)
-    5 = IN (N)
-    */
-    
-    let cell_value = maze_arrays[current_maze][Math.floor(counter / dim_square_maze)][counter % dim_square_maze]; 
-    if(cell_value == 11){
-        square.classList.add('backGroundColorWall');
-    }
-    else if(cell_value == 10){
-        square.classList.add('backGroundColorEmpty');
-    }
-    //if cell value is one of the possible doors (connecting exit points)
-    else if(cell_value == 0 || cell_value == 1 || cell_value == 2 || cell_value == 3 || cell_value == 4 || cell_value == 5){
-        square.classList.add('backGroundColorFinish'); //just use Finish for the color of all the non key requiring doors
+        /*
+        code for cube land
+        10 = empty pathway
+        11 = wall
+        66 = key
+        0 = UP (U)
+        1 = DOWN (D)
+        2 = LEFT (L)
+        3 = RIGHT (R)
+        4 = OUT (T)
+        5 = IN (N)
+        */
         
-        //logic for updating door_num value dependent on where the player exits previous room and is entering current room
-        if(cell_value == door_num){
-            
-            //If it is an up wall, then the cell underneath should be a valid starting point 
-            if(cell_value == 0){
-                current_square = counter + dim_square_maze;
-                start_square = counter + dim_square_maze;  
-                console.log("current_square: " + current_square);
-                console.log("start_square: " + start_square);
-                squares[start_square].classList.add('backGroundColorCurrent');
-            }
-            //If it is a down wall, then the cell above should be a valid starting point
-            else if(cell_value == 1){
-                current_square = counter - dim_square_maze;
-                start_square = counter - dim_square_maze;  
-                console.log("current_square: " + current_square);
-                console.log("start_square: " + start_square);
-                squares[start_square].classList.add('backGroundColorCurrent');
-            }        
-            //If it is a left wall, then the cell to the right should be a valid starting point 
-            else if(cell_value == 2){
-                current_square = counter + 1;
-                start_square = counter + 1;  
-                console.log("current_square: " + current_square);
-                console.log("start_square: " + start_square);
-                squares[start_square].classList.add('backGroundColorCurrent');
-            }        
-            //If it is a right wall, then the cell to the left should be a valid starting point 
-            else if(cell_value == 3){
-                current_square = counter - 1;
-                start_square = counter - 1;
-                console.log("current_square: " + current_square);
-                console.log("start_square: " + start_square);  
-                squares[start_square].classList.add('backGroundColorCurrent');
-            }        
-            //If it is an out wall, then any of the adjacent cells that is not a wall should be a valid starting point 
-            //If it is an in wall, then any of the adjacent cells that is not a wall should be a valid starting point
-            else if((cell_value == 4) || (cell_value == 5)){
-                let possible_out_door_in_door_start_squares = [counter + dim_square_maze, counter - dim_square_maze, counter + 1, counter - 1];
-
-                possible_out_door_in_door_start_squares.forEach(s => {
-                    if(maze_arrays[current_maze][Math.floor(s / dim_square_maze)][s % dim_square_maze] == 10){
-                        current_square = s;
-                        start_square = s;          
-                    }
-                });
-
-                squares[start_square].classList.add('backGroundColorCurrent');
-
-            }        
-
-            
+        let cell_value = maze_arrays[current_maze][Math.floor(counter / dim_square_maze)][counter % dim_square_maze]; 
+        if(cell_value == 11){
+            square.classList.add('backGroundColorWall');
         }
-        
-        goal_squares.push(counter);
-    }
-    else if(cell_value == 66){ //a key
-        square.classList.add('backGroundColorKey');
-    }
+        else if(cell_value == 10){
+            square.classList.add('backGroundColorEmpty');
+        }
+        //if cell value is one of the possible doors (connecting exit points)
+        else if(cell_value == 0 || cell_value == 1 || cell_value == 2 || cell_value == 3 || cell_value == 4 || cell_value == 5){
+            square.classList.add('backGroundColorFinish'); //just use Finish for the color of all the non key requiring doors
 
-    counter++; 
+            //logic for updating door_num value dependent on where the player exits previous room and is entering current room
+            if(cell_value == door_num){
+
+                //If it is an up wall, then the cell underneath should be a valid starting point 
+                if(cell_value == 0){
+                    current_square = counter + dim_square_maze;
+                    start_square = counter + dim_square_maze;  
+                    console.log("current_square: " + current_square);
+                    console.log("start_square: " + start_square);
+                    squares[start_square].classList.add('backGroundColorCurrent');
+                }
+                //If it is a down wall, then the cell above should be a valid starting point
+                else if(cell_value == 1){
+                    current_square = counter - dim_square_maze;
+                    start_square = counter - dim_square_maze;  
+                    console.log("current_square: " + current_square);
+                    console.log("start_square: " + start_square);
+                    squares[start_square].classList.add('backGroundColorCurrent');
+                }        
+                //If it is a left wall, then the cell to the right should be a valid starting point 
+                else if(cell_value == 2){
+                    current_square = counter + 1;
+                    start_square = counter + 1;  
+                    console.log("current_square: " + current_square);
+                    console.log("start_square: " + start_square);
+                    squares[start_square].classList.add('backGroundColorCurrent');
+                }        
+                //If it is a right wall, then the cell to the left should be a valid starting point 
+                else if(cell_value == 3){
+                    current_square = counter - 1;
+                    start_square = counter - 1;
+                    console.log("current_square: " + current_square);
+                    console.log("start_square: " + start_square);  
+                    squares[start_square].classList.add('backGroundColorCurrent');
+                }        
+                //If it is an out wall, then any of the adjacent cells that is not a wall should be a valid starting point 
+                //If it is an in wall, then any of the adjacent cells that is not a wall should be a valid starting point
+                else if((cell_value == 4) || (cell_value == 5)){
+                    let possible_out_door_in_door_start_squares = [counter + dim_square_maze, counter - dim_square_maze, counter + 1, counter - 1];
+
+                    possible_out_door_in_door_start_squares.forEach(s => {
+                        if(maze_arrays[current_maze][Math.floor(s / dim_square_maze)][s % dim_square_maze] == 10){
+                            current_square = s;
+                            start_square = s;          
+                        }
+                    });
+
+                    squares[start_square].classList.add('backGroundColorCurrent');
+
+                }        
+
+
+            }
+
+            goal_squares.push(counter);
+        }
+        else if(cell_value == 66){ //a key
+            square.classList.add('backGroundColorKey');
+        }
+
+        counter++; 
     
     });
 }
@@ -1410,7 +1365,7 @@ function down_next_is_not_a_wall(current_square){
 
 function keyDownHandler(event) {
     if(event.keyCode == 39) { //right
-        //need to check if a valid square
+        //check if a valid square
         //a valid square would be a 10 square and also
         //would not to be an edge square, 
         //so if (current_square + 1 % dim_square_maze) > current_square then do it, 
@@ -1457,7 +1412,7 @@ function keyDownHandler(event) {
 
 function determine_next_room_and_door(current_room, exit_door){
     //door_num and current_maze are global
-    //should do the array math here once and save in a variable rather than doing every time that you need it below...
+    //could do the array math here once and save in a variable rather than doing every time that you need it below...
 
     //determine entry door for next room from exit door of current room
     //to oppositize (up <-> down, left <-> right, out <-> in): if door index is odd, subtract one. else, add one
@@ -1470,7 +1425,7 @@ function determine_next_room_and_door(current_room, exit_door){
         door_num = previous_door_num + 1;
     }
 
-    //determine next maze (room)
+    //determine next maze (room) for each room's exit doors
     if(current_room == 0){
         console.log("exit_door: " + exit_door + " maze_arrays[current_maze][Math.floor(exit_door / dim_square_maze)][exit_door % dim_square_maze]: " + maze_arrays[current_maze][Math.floor(exit_door / dim_square_maze)][exit_door % dim_square_maze]);
         if(maze_arrays[current_maze][Math.floor(exit_door / dim_square_maze)][exit_door % dim_square_maze] == 0){ //up door
@@ -1513,7 +1468,7 @@ function determine_next_room_and_door(current_room, exit_door){
             console.log("not a valid connection");
         }
         else if(maze_arrays[current_maze][Math.floor(exit_door / dim_square_maze)][exit_door % dim_square_maze] == 5){ //in door
-            //NEED KEY LOGIC KEY BB
+            //KEY BB NEEDED
             current_maze = 2;
         }
         else{
@@ -1535,7 +1490,7 @@ function determine_next_room_and_door(current_room, exit_door){
             console.log("not a valid connection");
         }
         else if(maze_arrays[current_maze][Math.floor(exit_door / dim_square_maze)][exit_door % dim_square_maze] == 4){ //out door
-            //NEED KEY LOGIC KEY BB
+            //KEY BB NEEDED
             current_maze = 1;
         }
         else if(maze_arrays[current_maze][Math.floor(exit_door / dim_square_maze)][exit_door % dim_square_maze] == 5){ //in door
@@ -1803,7 +1758,7 @@ function determine_next_room_and_door(current_room, exit_door){
             console.log("not a valid connection");
         }
         else if(maze_arrays[current_maze][Math.floor(exit_door / dim_square_maze)][exit_door % dim_square_maze] == 5){ //in door
-            //NEED KEY LOGIC KEY CC
+            //KEY CC NEEDED
             current_maze = 14;
         }
         else{
@@ -1825,7 +1780,7 @@ function determine_next_room_and_door(current_room, exit_door){
             current_maze = 17;
         }
         else if(maze_arrays[current_maze][Math.floor(exit_door / dim_square_maze)][exit_door % dim_square_maze] == 4){ //out door
-            //NEED KEY LOGIC KEY CC
+            //KEY CC NEEDED
             current_maze = 13;
         }
         else if(maze_arrays[current_maze][Math.floor(exit_door / dim_square_maze)][exit_door % dim_square_maze] == 5){ //in door
@@ -1853,7 +1808,7 @@ function determine_next_room_and_door(current_room, exit_door){
             console.log("not a valid connection");
         }
         else if(maze_arrays[current_maze][Math.floor(exit_door / dim_square_maze)][exit_door % dim_square_maze] == 5){ //in door
-            //NEED KEY LOGIC KEY AA
+            //KEY AA NEEDED
             current_maze = 16;
         }
         else{
@@ -1875,7 +1830,7 @@ function determine_next_room_and_door(current_room, exit_door){
             console.log("not a valid connection");
         }
         else if(maze_arrays[current_maze][Math.floor(exit_door / dim_square_maze)][exit_door % dim_square_maze] == 4){ //out door
-            //NEED KEY LOGIC KEY AA
+            //KEY AA NEEDED
             current_maze = 15;
         }
         else if(maze_arrays[current_maze][Math.floor(exit_door / dim_square_maze)][exit_door % dim_square_maze] == 5){ //in door
@@ -1924,7 +1879,7 @@ function determine_next_room_and_door(current_room, exit_door){
             console.log("not a valid connection");
         }
         else if(maze_arrays[current_maze][Math.floor(exit_door / dim_square_maze)][exit_door % dim_square_maze] == 4){ //out door
-            //NEED KEY LOGIC KEY DD
+            //KEY DD NEEDED
             current_maze = 20;
         }
         else if(maze_arrays[current_maze][Math.floor(exit_door / dim_square_maze)][exit_door % dim_square_maze] == 5){ //in door
@@ -1976,7 +1931,7 @@ function determine_next_room_and_door(current_room, exit_door){
             console.log("not a valid connection");
         }
         else if(maze_arrays[current_maze][Math.floor(exit_door / dim_square_maze)][exit_door % dim_square_maze] == 5){ //in door
-            //NEED KEY LOGIC KEY DD
+            //KEY DD NEEDED
             current_maze = 18;
         }
         else{
