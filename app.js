@@ -1227,19 +1227,23 @@ function draw_maze(){
     }
 
     info_key_AA.style.color = '#ebc034';
-    info_key_AA.style.fontSize = '20px';
+    info_key_AA.style.paddingLeft = '42px';
+    info_key_AA.style.fontSize = '16px';
     document.body.appendChild(info_key_AA);
 
     info_key_BB.style.color = '#ebc034';
-    info_key_BB.style.fontSize = '20px';
+    info_key_BB.style.paddingLeft = '42px';
+    info_key_BB.style.fontSize = '16px';
     document.body.appendChild(info_key_BB);
 
     info_key_CC.style.color = '#ebc034';
-    info_key_CC.style.fontSize = '20px';
+    info_key_CC.style.paddingLeft = '42px';
+    info_key_CC.style.fontSize = '16px';
     document.body.appendChild(info_key_CC);
 
     info_key_DD.style.color = '#ebc034';
-    info_key_DD.style.fontSize = '20px';
+    info_key_DD.style.paddingLeft = '42px';
+    info_key_DD.style.fontSize = '16px';
     document.body.appendChild(info_key_DD);
 
 
