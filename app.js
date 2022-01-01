@@ -1,10 +1,7 @@
-const squares = document.querySelectorAll('.square');
-//const info_display = document.querySelectorAll('.infoDisplay');
+//play maze at https://nathanfenoglio.github.io/cube_maze/
 
-//you have /f/School/CSE 1325/Virtual Appliance Shared/General_Read_File_And_Do_Stuff/io_stuff.cpp that will print the maze_arrays for you from csv file
-//could perhaps add a 3d maze_arrays_holder to hold multiple mazes to be able to load once one is solved
-//could think of it like greg bright's hole maze or your maze for escape from uta
-//you have done so
+
+const squares = document.querySelectorAll('.square');
 
 let maze_arrays = [ 
     //0
@@ -1133,46 +1130,26 @@ var previous_door_num = -1;
 
 var string_rep_of_door_nums = ["UP", "DOWN", "LEFT", "RIGHT", "OUT", "IN"];
 
-//console.log(maze_arrays);
 //there really doesn't seem to be any reason to put the maze into a 2d array instead of a 1d array 
 //except for keeping track of things I suppose so do it
 function draw_maze(){
     document.body.style.backgroundColor = 'blue';
     counter = 0;
     //just printing
-    //should add html to represent on page...
     console.log("door_num: " + door_num + " current_maze: " + current_maze);
     if(first_time){
         first_time = false;
     }
     else{
-        //alert("door_num: " + door_num + " current_maze: " + current_maze);
         alert("going through " + string_rep_of_door_nums[previous_door_num] + " door from room " + Number(previous_maze_num).toString(3).padStart(3, '0') + " to room " + Number(current_maze).toString(3).padStart(3, '0'));
     }
     
-    /*
-    //var info = document.createElement('h1');
-    info.innerHTML = "door_num: " + door_num + " current_maze: " + current_maze;
-    info.classList.add('style_stuff');
-    let style = document.createElement('style');
-    style.innerHTML = '.style_stuff{font-size:20px;font-weight: lighter; font-family: sans-serif; color: cornflowerblue;}';
-    document.body.appendChild(style);
-    document.body.appendChild(info);
-    */
-    //info_2.innerHTML = "CURRENT ROOM IN CUBE: " + current_maze;
     info_2.innerHTML = "CURRENT ROOM IN CUBE: " + Number(current_maze).toString(3).padStart(3, '0');
-    //info_2.classList.add('style_stuff_2');
-    //let style_2 = document.createElement('style_2');
-    //style_2.innerHTML = '.style_stuff_2{font-size:40px;color:pink;}';
-    //style_2.innerHTML = '.style_stuff_2{font-size:20px;font-weight: lighter; font-family: sans-serif; color: cornflowerblue;}';
     info_2.style.color = '#ff0080';
     info_2.style.marginTop = '20px';
     info_2.style.fontSize = '25px';
-    //info_2.style.fontSize = '40px';
-    //document.body.appendChild(style_2);
     document.body.appendChild(info_2);
-    //document.body.insertAdjacentHTML("beforebegin", '<div class="infoDisplay" id=666>flam</div>');
-    //cube_image.src = "cube_images/0_0_0_Map.png";
+
     cube_image.src = cube_images[current_maze];
     cube_image.style.background = '#ffaa69';
     cube_image.style.padding = '20px';
@@ -1224,10 +1201,6 @@ function draw_maze(){
     document.body.appendChild(info_key_DD);
 
 
-
-
-
-
     squares.forEach(square => {
     
     /*
@@ -1252,8 +1225,6 @@ function draw_maze(){
     }
     //if cell value is one of the possible doors (connecting exit points)
     else if(cell_value == 0 || cell_value == 1 || cell_value == 2 || cell_value == 3 || cell_value == 4 || cell_value == 5){
-        //should if door is one of the doors that require a key and assign color per door with corresponding key color
-        //nah not now at least
         square.classList.add('backGroundColorFinish'); //just use Finish for the color of all the non key requiring doors
         
         //logic for updating door_num value dependent on where the player exits previous room and is entering current room
@@ -1312,7 +1283,6 @@ function draw_maze(){
         
         goal_squares.push(counter);
     }
-    //maybe should do a diff color for each key and then that door can be represented by the same color
     else if(cell_value == 66){ //a key
         square.classList.add('backGroundColorKey');
     }
@@ -1447,12 +1417,10 @@ function determine_next_room_and_door(current_room, exit_door){
     //to oppositize (up <-> down, left <-> right, out <-> in): if door index is odd, subtract one. else, add one
     if((maze_arrays[current_maze][Math.floor(exit_door / dim_square_maze)][exit_door % dim_square_maze] % 2) == 1){ 
         previous_door_num = maze_arrays[current_maze][Math.floor(exit_door / dim_square_maze)][exit_door % dim_square_maze]; 
-        //door_num = maze_arrays[current_maze][Math.floor(exit_door / dim_square_maze)][exit_door % dim_square_maze] - 1;
         door_num = previous_door_num - 1;
     }
     else{
         previous_door_num = maze_arrays[current_maze][Math.floor(exit_door / dim_square_maze)][exit_door % dim_square_maze];
-        //door_num = maze_arrays[current_maze][Math.floor(exit_door / dim_square_maze)][exit_door % dim_square_maze] + 1;
         door_num = previous_door_num + 1;
     }
 
@@ -2153,12 +2121,10 @@ function walk_maze(){
             alert("key needed for passage between 2,0,0 (18) and 2,0,2 (20) found!");
         }
     }
+
     if(goal_squares.includes(current_square)){
         //set current_maze and door_num based on the cube architecture
-        //NEED TO ADD THE KEYS AND DOOR LOGIC...
-        //could perhaps add checks here if current_maze is a locked door transition room
-        //and current_square represents the particular door that would be locked
-        //then display a message about the door being locked and the room that the player can find the key in
+
         //check for locked door and if door is locked
         //key AA needed
         if(current_maze == 15 && maze_arrays[current_maze][Math.floor(current_square / dim_square_maze)][current_square % dim_square_maze] == 5 && doors_locked_or_open[current_maze] == 0){
@@ -2247,10 +2213,8 @@ function walk_maze(){
         }
         //no key needed
         else{ 
-            //need to have different messages as you go room to room, not just you solved it until the end
             //can do the customized message at the beginning of the draw_maze function
-            //console.log("you solved it!");
-            //alert("you solved it!");
+
             //start over
             counter = 0;
 
@@ -2266,13 +2230,10 @@ function walk_maze(){
             previous_maze_num = current_maze;
             determine_next_room_and_door(current_maze, current_square);
 
-            //NEED TO DISPLAY ON SCREEN INSTEAD WITH CUBE REPRESENTATION MAP PERHAPS...
             console.log("current_maze: " + current_maze + " current_square: " + current_square);
 
             draw_maze();
         }
-
-        //draw_maze();
 
     }
 
