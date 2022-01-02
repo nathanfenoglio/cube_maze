@@ -1056,7 +1056,7 @@ function determine_next_room_and_door(current_room, exit_door){
             current_maze = 25;
         }
         else if(maze_arrays[current_maze][Math.floor(exit_door / dim_square_maze)][exit_door % dim_square_maze] == 5){ //in door
-            current_maze = 2;
+            console.log("not a valid connection");
         }
         else{
             console.log("not an exit door???");
