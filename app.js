@@ -1102,31 +1102,31 @@ End room: 2, 1, 2
 //should color in some way to signify locked
 let doors_locked_or_open = [1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
 
-var info_2 = document.createElement('h1');
+const info_2 = document.createElement('h1');
 
-var info_3 = document.createElement('h1');
+const info_3 = document.createElement('h1');
 info_3.innerHTML = "GOAL ROOM: 212";
 info_3.style.color = '#5feb34';
 info_3.style.marginTop = '10px';
 info_3.style.fontSize = '25px';
 
 //display whether or not have obtained keys
-var info_key_AA = document.createElement('h4');
-var info_key_BB = document.createElement('h4');
-var info_key_CC = document.createElement('h4');
-var info_key_DD = document.createElement('h4');
+const info_key_AA = document.createElement('h4');
+const info_key_BB = document.createElement('h4');
+const info_key_CC = document.createElement('h4');
+const info_key_DD = document.createElement('h4');
 
 
-var cube_image = document.createElement('img');
+const cube_image = document.createElement('img');
 
 //to not display any transition door room message on the first draw
-var first_time = true;
+let first_time = true;
 
 //to save previous room and door info to use in transition message
-var previous_maze_num = -1;
-var previous_door_num = -1;
+let previous_maze_num = -1;
+let previous_door_num = -1;
 
-var string_rep_of_door_nums = ["UP", "DOWN", "LEFT", "RIGHT", "OUT", "IN"];
+const string_rep_of_door_nums = ["UP", "DOWN", "LEFT", "RIGHT", "OUT", "IN"];
 
 function draw_maze(){
     document.body.style.backgroundColor = 'blue';
