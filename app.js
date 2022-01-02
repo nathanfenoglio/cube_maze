@@ -3,8 +3,9 @@
 
 
 //create squares for each spot in the maze grid
+const room_dim = 35;
 const grid = document.getElementById("grid");
-for(let i = 0; i < 35 * 35; i++){
+for(let i = 0; i < room_dim * room_dim; i++){
     let one_square = document.createElement("div");
     one_square.className = "square";
     one_square.setAttribute("id", i);
